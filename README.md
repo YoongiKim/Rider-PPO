@@ -11,7 +11,7 @@ and install Rider game in playstore.
 5. You'll have to purchase "remove ads" in the rider game or change the mouse click point yourself in the source code.
 6. Run ppo.bat (Make sure Bluestacks window is on the screen. Program will move window to 0, 0 and topmost.)
 
-# Ctrl + Alt + Del to stop program
+#Ctrl + Alt + Del to stop program
 
 # Tools
 AccuRuler : mouse click point ruler
