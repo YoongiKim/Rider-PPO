@@ -7,10 +7,13 @@ Copyright (c) <2018> YoongiKim
 import cv2
 import numpy as np
 import os
-from RiderEnvironment import tf_mnist_custom
+from RiderEnvironment.score_model import ScoreModel
 
 last_rect_sum = 0
 file_counter = 0
+MAKE_TRAIN_DATA = False
+
+score_model = ScoreModel()
 
 def read(img):
     global last_rect_sum
@@ -23,9 +26,9 @@ def read(img):
     contours = sorted(contours, key=lambda x: cv2.boundingRect(x)[0])
     #image = cv2.drawContours(img, contours, -1, (0,0,255), 1)
     #print(len(contours))
-
     # if(len(contours)==0 or sum(cv2.boundingRect(contours[-1])) == last_rect_sum):
     #    return
+    # last_rect_sum = sum(cv2.boundingRect(contours[-1]))
 
     digits = []
     visualize = np.zeros((100, 100, 3), np.uint8)
@@ -36,7 +39,7 @@ def read(img):
         if(23<=h<=29 and w<=24):
             crop = white[y:y + h, x:x + w]
             finalImg = process_image(crop)
-            digits.append(tf_mnist_custom.mnist_predict(finalImg))
+            digits.append(score_model.predict(finalImg))
 
             visualize = cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 1)
 
@@ -49,11 +52,8 @@ def read(img):
         score = -10
 
     visualize = put_text(str(score), visualize)
-    show(visualize, "score", 313, 0)
 
-    # last_rect_sum = sum(cv2.boundingRect(contours[-1]))
-
-    return score
+    return score, visualize
 
 
 def process_image(img):
@@ -72,9 +72,10 @@ def process_image(img):
     img = cv2.resize(img, (28, 28), interpolation=cv2.INTER_NEAREST)
     #show(img, "digit", 300, 100)
 
-    #global  file_counter
-    #write_img(img, os.getcwd() +"/score_train_data/"+ str(file_counter) + ".png")
-    #file_counter += 1
+    if MAKE_TRAIN_DATA:
+        global file_counter
+        write_img(img, os.getcwd()+"/RiderEnvironment/score_train_data/"+ str(file_counter) + ".png")
+        file_counter += 1
 
     img = to_binary(img)
     return img

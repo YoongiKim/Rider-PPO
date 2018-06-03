@@ -16,33 +16,6 @@ import gym
 
 ## PRESS CTRL + ALT + DEL to stop program
 
-class PreviousFrameMixer:
-    PreviousFrames = []
-
-    def __init__(self, number_of_frames, height, width):
-        self.height = height
-        self.width = width
-        self.len = number_of_frames
-
-        self.clear()
-
-    def clear(self):
-        self.PreviousFrames = []
-        for i in range(self.len):
-            self.PreviousFrames.append(np.zeros(shape=(self.height, self.width), dtype=np.uint8))
-
-    def stack_frame(self, img):
-        self.PreviousFrames.append(img)
-        self.PreviousFrames.pop(0)
-
-    def get_mixed_frames(self): # mix previous frames by time to reduce memory
-        result_img = np.zeros(shape=(self.height, self.width), dtype=np.uint8)
-
-        for i in range(self.len):
-            result_img = cv2.addWeighted(result_img, float(i/self.len), self.PreviousFrames[i], float(i+1/self.len), 0)
-
-        return np.array(result_img)
-
 class RiderEnv:
     LastScore = 0
     LastAction = 0
@@ -50,16 +23,12 @@ class RiderEnv:
     capture_y = 120
     capture_w = 296
     capture_h = 296
-    obs_w = 100 # Must Change models.py 224 line, 287 line
+    obs_w = 100
     obs_h = 100
     step_count = 0
     same_score_count = 0
 
-    frame_mixer = PreviousFrameMixer(4, obs_h, obs_w)
-
     def __init__(self):
-        self.frame_mixer.clear()
-
         self.observation_space = \
             gym.spaces.Box(low=0, high=255,
                            shape=np.zeros(shape=(self.obs_h * self.obs_w), dtype=np.uint8).shape
@@ -75,8 +44,6 @@ class RiderEnv:
         self.LastScore = 0
         self.LastAction = 0
         self.same_score_count = 0
-
-        self.frame_mixer.clear()
 
         self.close_advertise_window()
 
@@ -112,45 +79,35 @@ class RiderEnv:
         self.close_advertise_window()
 
         score = self.LastScore
-        if self.step_count % 5 == 0:
+        if self.step_count % 1 == 0:
             score = self.get_score(result_frame)
         # score = self.get_score(result_frame)
         if score <= self.LastScore:
             self.same_score_count += 1
             if self.same_score_count > 150:
                 self.back_to_menu()
+                self.same_score_count = 0
 
         else:
             self.same_score_count = 0
 
-        reward = (score - self.LastScore) * 5 \
-                 + 0.005*self.LastAction \
-                 - self.same_score_count * 0.005
-
+        reward = score - self.LastScore
         self.LastScore = score
 
-        if done:
-            reward = score - self.LastScore
-            #reward = -1*(100-self.LastScore)
-
         current_observation = self.__get_observation(result_frame)
-
-        self.frame_mixer.stack_frame(current_observation)
+        self.show(current_observation, "obs", 300, 200)
 
         if self.step_count % 1 == 0:
             print("step: {}, reward: {}, done: {}, score: {}, action: {}"
                   .format(self.step_count, reward, done, score, action[0]))
 
-        mixed_frame = self.frame_mixer.get_mixed_frames()
-        self.show(mixed_frame, "obs", 313, 200)
-
-        return mixed_frame.flatten(), reward, done, self.LastScore
+        return current_observation.flatten(), reward, done, self.LastScore
 
     def close(self):
         cv2.destroyAllWindows()
 
     def __get_observation(self, screen):
-        edge_screen = self.process_img(screen)
+        edge_screen = np.array(self.process_img(screen))
         return edge_screen
 
     def to_binary(self, img):
@@ -188,7 +145,8 @@ class RiderEnv:
 
         score_image = image[y:y + h, x:x + w]
 
-        score = read_score.read(score_image)
+        score, visual = read_score.read(score_image)
+        self.show(visual, 'score', 300, 0)
 
         if abs(score - self.LastScore) >= 10:
             score = self.LastScore

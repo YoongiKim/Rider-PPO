@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3ba743f-ec43-4bb4-aadf-4d19b38d9308" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/RiderEnvironment/score_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccuRuler.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColorCop.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HowToUse1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HowToUse2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HowToUse3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HowToUse4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HowToUse5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/RiderEnvironment/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522932732.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522932963.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522933519.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522933666.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522933742.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522933844.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522933894.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522934031.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/log/openaistuff/events.out.tfevents.1522934191.DESKTOP-KCB8N07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/mnist_model_custom/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/mnist_model_custom/model-9.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/mnist_model_custom/model-9.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/mnist_model_custom/model-9.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiderEnvironment/read_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/RiderEnvironment/read_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/best-practices-ppo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphexporter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo/history.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo/renderthread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppo/trainer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Rider_PPO$keras_mnist_custom.coverage" NAME="keras_mnist_custom Coverage Results" MODIFIED="1528030197712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RiderEnvironment" />
+    <SUITE FILE_PATH="coverage/Rider_PPO$score_model.coverage" NAME="score_model Coverage Results" MODIFIED="1528036800263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RiderEnvironment" />
+    <SUITE FILE_PATH="coverage/Rider_PPO$main.coverage" NAME="main Coverage Results" MODIFIED="1528042721972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RiderEnvironment/environment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="e#91#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_window.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RiderEnvironment/show_window.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>read</find>
+      <find>obs</find>
+      <find>(2, 2)</find>
+      <find>(5, 5)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>(4, 4)</replace>
+      <replace>(3, 3)</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/RiderEnvironment/keras_mnist_custom.py" />
+        <option value="$PROJECT_DIR$/RiderEnvironment/show_window.py" />
+        <option value="$PROJECT_DIR$/RiderEnvironment/read_score.py" />
+        <option value="$PROJECT_DIR$/RiderEnvironment/score_model.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/RiderEnvironment/environment.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="920" />
+    <option name="width" value="941" />
+    <option name="height" value="1087" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Rider-PPO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rider-PPO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rider-PPO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rider-PPO" type="462c0819:PsiDirectoryNode" />
+              <item name="RiderEnvironment" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="keras_mnist_custom" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rider-PPO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RiderEnvironment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Workspaces\Rider-PPO\RiderEnvironment\score_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rider-PPO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="score_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rider-PPO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RiderEnvironment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RiderEnvironment/score_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.keras_mnist_custom" />
+      <item itemvalue="Python.score_model" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.score_model" />
+        <item itemvalue="Python.keras_mnist_custom" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3ba743f-ec43-4bb4-aadf-4d19b38d9308" name="Default" comment="" />
+      <created>1528028157533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528028157533</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="920" y="0" width="941" height="1087" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37236288" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29738933" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" weight="0.3291714" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978904" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RiderEnvironment/show_window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RiderEnvironment/read_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="e#91#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RiderEnvironment/score_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#91#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RiderEnvironment/tf_mnist_custom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+          <folding>
+            <element signature="e#91#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RiderEnvironment/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#91#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
