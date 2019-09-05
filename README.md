@@ -1,5 +1,6 @@
 # Rider-PPO
-Rider Reinforcement Learning Environment with Proximal Policy Optimization
+### Rider Reinforcement Learning Environment with Proximal Policy Optimization
+![](rider.gif)
 
 # How to use
 
